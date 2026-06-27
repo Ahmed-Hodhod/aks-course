@@ -15,7 +15,7 @@ The following options are supported for a private ACR with network isolated clus
 1. $${\color{red}AKS-managed\space ACR}$$  - AKS creates, manages, and reconciles an ACR resource in this option. You don't need to assign any permissions or manage the ACR. AKS manages the cache rules, private link, and private endpoint used in the network isolated cluster. An AKS-managed ACR follows the same behavior as other resources (route table, Azure Virtual Machine Scale Sets, etc.) in the infrastructure resource group. To avoid the risk of cluster components or new node bootstrap failing, do not update or delete the ACR, its cache rules, or its system images.. The AKS-managed ACR is continuously reconciled so that cluster components and new nodes work as expected.
 
 
-3. Bring your own (BYO) ACR - The BYO ACR option requires creating an ACR with a private link between the ACR resource and the AKS cluster. See Connect privately to an Azure container registry using Azure Private Link to understand how to configure a private endpoint for your registry.
+3. $${\color{red}Bring\space your\space own \space (BYO) \space ACR}$$ - The BYO ACR option requires creating an ACR with a private link between the ACR resource and the AKS cluster. See Connect privately to an Azure container registry using Azure Private Link to understand how to configure a private endpoint for your registry.
 
 ## Definning environment variables
 
